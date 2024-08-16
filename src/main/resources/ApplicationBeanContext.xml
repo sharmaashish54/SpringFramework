@@ -20,4 +20,5 @@
     <bean id="car" class="car.example.setter.injection.Car">
         <property name="specification" ref="specification"></property>
     </bean>
+
 </beans>

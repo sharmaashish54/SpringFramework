@@ -7,7 +7,7 @@ public class Car {
         this.specification = specification;
     }
 
-    public void displayDetails(){
-        System.out.println("Car Details "+ specification.toString());
+    public void displayDetails() {
+        System.out.println("Car Details " + specification.toString());
     }
 }

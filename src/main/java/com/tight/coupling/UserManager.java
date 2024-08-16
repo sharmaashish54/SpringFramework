@@ -4,7 +4,8 @@ public class UserManager {
 
 
     UserDatabase userDatabase = new UserDatabase();//Tight Coupling
-    public String getUserInfo(){
+
+    public String getUserInfo() {
         return userDatabase.getUserDetails();
 
 
