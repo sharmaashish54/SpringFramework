@@ -7,12 +7,11 @@ public class IOCBeanExample {
     public static void main(String[] args) {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationLooseCouplingBeanContext.xml");
+
         UserManager userManager = (UserManager) context.getBean("userManager");
         System.out.println(userManager.getUserInfo());
 
-//Now if we change the DB from UserData provider to WebserviceProvider,
-// there is loose coupling
-
+        //Now we are getting data based on IOC container managed beans.
 
         UserManager webserviceObj = (UserManager) context.getBean("userManagerWebService");
         System.out.println(webserviceObj.getUserInfo());
